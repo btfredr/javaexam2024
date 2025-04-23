@@ -10,13 +10,14 @@
 import java.util.Scanner;
 
 public class Task4 {
-    private static double gallons;
-    private double conversion = gallons * 3.785;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter the amount of gallons you want to convert into liters: ");
-        gallons = scanner.nextDouble();
-        
-        
+        double gallons = scanner.nextDouble();
+
+        double conversion = gallons * 3.785;
+        System.out.print(gallons + " gallons equal " + conversion + " liters.");
+
+        scanner.close();
     }
 }
