@@ -15,7 +15,7 @@ public class Task1 {
         System.out.println(biggestOddNum(-5.75));
     }
 
-    public static double biggestOddNum(double number) {
+    public static int biggestOddNum(double number) {
         // Finnr største heltallet
         int floorValue = (int) Math.floor(number);
 
