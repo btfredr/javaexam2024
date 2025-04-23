@@ -9,13 +9,20 @@
 
 
 public class Task3 {
+
+    public static void main(String[] args) {
+        absoluteValue(6);
+    }
     
     public static void absoluteValue(int n) {
 
         if(n > 0) {
             int current = n;
             do {
-                System.out.print(current + ", ");
+                System.out.print(current);
+                if (current > n-5) {
+                    System.out.print(", ");
+                }
                 current--;
             }
             while (current >= n-5);
