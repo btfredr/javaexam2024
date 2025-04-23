@@ -20,6 +20,14 @@ public class Task2 {
         System.out.print("Please enter height of the pyramid: ");
         int height = scanner.nextInt();
 
-        
+        for (int i = 1; i <= height; i++) {
+            System.out.println();
+
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+        }
+
+        scanner.close();
     }
 }
